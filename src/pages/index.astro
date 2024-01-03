@@ -4,12 +4,14 @@ import Grid from "../components/Grid.astro";
 import LinkedIn from "../components/LinkedIn.astro";
 import Layout from "../layouts/Layout.astro";
 import Github from "../components/Github.astro";
+import ThemeSwitch from "../components/ThemeSwitch.astro";
+import AboutMe from "../components/AboutMe.astro";
 
 const colors = [
   {
     color: "#dfc4fe",
     size: "large",
-    children: "LinkedIn",
+    children: AboutMe,
   },
   {
     color: "#0A66C2",
@@ -39,7 +41,7 @@ const colors = [
   {
     color: "#d1fae",
     size: "small",
-    children: "LinkedIn",
+    children: ThemeSwitch,
   },
 ];
 ---
