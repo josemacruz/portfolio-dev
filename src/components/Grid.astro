@@ -1,0 +1,14 @@
+<div class="grid"><slot /></div>
+
+<style>
+  @media (min-width: 470px) {
+    .grid {
+      display: grid;
+      gap: 1rem;
+      grid-auto-flow: dense;
+      grid-auto-rows: 12.5rem;
+      padding: 1rem;
+      grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
+    }
+  }
+</style>

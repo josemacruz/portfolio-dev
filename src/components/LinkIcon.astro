@@ -1,0 +1,38 @@
+---
+interface Props {
+  url: string;
+  width?: number;
+}
+const { url } = Astro.props;
+---
+
+<a class="link" href={url} target="_blank" rel="noopener noreferrer">
+  <svg {...Astro.props} viewBox="0 0 24 24" transform="rotate(0)"
+    ><g>
+      <path
+        d="M7 17L17 7M17 7H8M17 7V16"
+        stroke-width="1"
+        stroke-linecap="round"
+        stroke-linejoin="round"></path>
+    </g></svg
+  >
+</a>
+
+<style>
+  .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    color: var(--secondary);
+    background-color: var(--primary);
+    stroke: black;
+    border-radius: 50%;
+
+    &:hover {
+      stroke: white;
+      background-color: red;
+    }
+  }
+</style>

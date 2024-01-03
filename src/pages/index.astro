@@ -1,0 +1,70 @@
+---
+import Card from "../components/Card.astro";
+import Grid from "../components/Grid.astro";
+import LinkedIn from "../components/LinkedIn.astro";
+import Layout from "../layouts/Layout.astro";
+import Github from "../components/Github.astro";
+
+const colors = [
+  {
+    color: "#dfc4fe",
+    size: "large",
+    children: "LinkedIn",
+  },
+  {
+    color: "#0A66C2",
+    size: "small",
+    children: LinkedIn,
+  },
+  {
+    color: "#fde68a",
+    size: "small",
+    children: "Github",
+  },
+  {
+    color: "#000000",
+    size: "large",
+    children: Github,
+  },
+  {
+    color: "#a7f3d0",
+    size: "small",
+    children: "Github",
+  },
+  {
+    color: "#fbcfe8",
+    size: "small",
+    children: "LinkedIn",
+  },
+  {
+    color: "#d1fae",
+    size: "small",
+    children: "LinkedIn",
+  },
+];
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    <Grid>
+      {
+        colors.map((item, index) => (
+          <Card
+            backgroundColor={item.color}
+            size={item.size}
+            className={`item${index}`}
+          >
+            <item.children />
+          </Card>
+        ))
+      }
+    </Grid>
+  </main>
+</Layout>
+
+<style>
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+</style>
