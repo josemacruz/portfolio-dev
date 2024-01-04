@@ -1,0 +1,71 @@
+<div>
+  <h2>Say Hi to me!</h2>
+  <a
+    href="mailto:josemacruz9726@gmail.com"
+    class="menu__link"
+    href="#"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Contact me<svg
+      width="30"
+      height="30"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9.71 18.293a1 1 0 0 0 1.415 0l4.887-4.892a2 2 0 0 0 0-2.828l-4.89-4.89a1 1 0 0 0-1.415 1.414l4.186 4.185a1 1 0 0 1 0 1.415L9.71 16.879a1 1 0 0 0 0 1.414Z"
+        fill="#0F0F0F"></path>
+    </svg></a
+  >
+</div>
+<style>
+  div {
+    font-family: "Inter variable", sans-serif;
+  }
+  h2 {
+    color: var(--black);
+    text-align: left;
+    font-weight: 400;
+  }
+  /* <reset-style> ============================ */
+  a {
+    text-decoration: none;
+    font-size: 2rem;
+    text-align: right;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  svg {
+    display: none;
+  }
+  /* <main-style> ============================ */
+  .menu__link {
+    color: var(--black);
+    line-height: 2;
+    position: relative;
+  }
+
+  .menu__link::before {
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    background-color: var(--black);
+    position: absolute;
+    bottom: -0.25rem;
+    left: 0;
+    transition: width 0.4s;
+  }
+
+  .menu__link:hover::before {
+    width: 100%;
+  }
+
+  .menu__link:hover svg {
+    display: inline;
+    transition: display 1.5s;
+  }
+</style>

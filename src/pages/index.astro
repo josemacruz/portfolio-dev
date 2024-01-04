@@ -7,6 +7,7 @@ import Github from "../components/Github.astro";
 import ThemeSwitch from "../components/ThemeSwitch.astro";
 import AboutMe from "../components/AboutMe.astro";
 import Experience from "../components/Experience.astro";
+import ContactMe from "../components/ContactMe.astro";
 
 const colors = [
   {
@@ -26,7 +27,7 @@ const colors = [
     company: 0,
   },
   {
-    color: "#000000",
+    color: "var(--black)",
     size: "large",
     children: Github,
   },
@@ -37,12 +38,12 @@ const colors = [
     company: 1,
   },
   {
-    color: "#fbcfe8",
+    color: "var(--green)",
     size: "small",
-    children: "LinkedIn",
+    children: ContactMe,
   },
   {
-    color: "#d1fae",
+    color: "var(--primary)",
     size: "small",
     children: ThemeSwitch,
   },
@@ -74,6 +75,7 @@ const colors = [
   main {
     max-width: 1200px;
     margin: 0 auto;
-    width: 100%;
+    width: 100vw;
+    padding-bottom: 80px;
   }
 </style>
