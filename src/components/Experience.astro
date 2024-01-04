@@ -1,58 +1,88 @@
 ---
 import Chip from "./Chip.astro";
 import KnowmadMood from "./KnowmadMood.astro";
+import Secmotic from "./Secmotic.astro";
+
+const { company } = Astro.props;
+
+const Companies = [
+  {
+    date: "Current",
+    logo: KnowmadMood,
+    title: "Knowmad mood",
+    description:
+      "I work as a front-end software engineer at Openbank, a leading digital bank in Europe. I develop and maintain web applications that offer a great user experience for the bank's customers.",
+    tags: [
+      "ReactJS",
+      "TypeScript",
+      "CSS3",
+      "Jest",
+      "HTML5",
+      "Accesibility",
+      "JavaScript",
+    ],
+    color: "linear-gradient(to left, #fac213 0%, #f77e21 50%, #d61c4e 100%)",
+  },
+  {
+    date: "March 2021 - March 2023",
+    logo: Secmotic,
+    title: "Secmotic S.L.",
+    description:
+      "I work as a front-end software engineer at Openbank, a leading digital bank in Europe. I develop and maintain web applications that offer a great user experience for the bank's customers.",
+    tags: [
+      "ReactJS",
+      "Docker",
+      "CSS3",
+      "SASS",
+      "Storybook",
+      "MongoDB",
+      "NodeJS",
+      "JavaScript",
+    ],
+    color: "#076CFF",
+  },
+];
 ---
 
 <article>
   <header>
-    <span>ACTUALIDAD</span>
+    <span>{Companies[company].date}</span>
     <div>
-      <KnowmadMood />
-      <h2>Knowmad mood</h2>
+      <Companies[company].logo />
+      <h2>{Companies[company].title}</h2>
     </div>
   </header>
   <main>
     <p>
-      I work as a front-end software engineer at <strong>Openbank</strong>, a
-      leading digital bank in Europe. I develop and maintain web applications
-      that offer a great user experience for the bank's customers.
+      {Companies[company].description}
     </p>
   </main>
   <footer>
-    {
-      [
-        "ReactJS",
-        "TypeScript",
-        "CSS3",
-        "Jest",
-        "HTML5",
-        "Accesibility",
-        "JavaScript",
-      ].map((item) => <Chip>{item}</Chip>)
-    }
+    {Companies[company].tags.map((item) => <Chip>{item}</Chip>)}
   </footer>
 </article>
 
-<style>
+<style define:vars={{ color: Companies[company].color }}>
   article {
     margin: auto 1rem;
     color: var(--black);
     font-family: "Inter Variable", sans-serif;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 0.5rem;
   }
 
   header {
     text-align: left;
   }
-
   span {
-    background: linear-gradient(to left, #fac213 0%, #f77e21 50%, #d61c4e 100%);
+    background: var(--color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 0.8rem;
     font-weight: 800;
+    display: inline-block;
+    margin-bottom: 1rem;
   }
 
   header > div {

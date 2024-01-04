@@ -23,6 +23,7 @@ const colors = [
     color: "var(--primary)",
     size: "small",
     children: Experience,
+    company: 0,
   },
   {
     color: "#000000",
@@ -30,9 +31,10 @@ const colors = [
     children: Github,
   },
   {
-    color: "#a7f3d0",
-    size: "small",
-    children: "Github",
+    color: "var(--primary)",
+    size: "large",
+    children: Experience,
+    company: 1,
   },
   {
     color: "#fbcfe8",
@@ -60,7 +62,7 @@ const colors = [
             size={item.size}
             className={`item${index}`}
           >
-            <item.children />
+            <item.children company={item.company} />
           </Card>
         ))
       }

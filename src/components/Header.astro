@@ -1,9 +1,18 @@
 ---
-import ThemeSwitch from "./ThemeSwitch.astro";
+import Github from "./Github.astro";
+import LinkedIn from "./LinkedIn.astro";
 ---
 
 <header>
-  <h1 class="wrapper">
+  <div>
+    <a href="/">
+      <Github width="30" height="30" fill="var(--secondary)" />
+    </a>
+    <a href="/">
+      <LinkedIn width="30" height="30" fill="var(--secondary)" />
+    </a>
+  </div>
+  <h1 class="wrapper" aria-label="josemacruz.dev title">
     <div class="header">{"<josemacruz"}</div>
     <div class="dot">{"."}</div>
     <div class="header">{"dev/>"}</div>
@@ -11,6 +20,9 @@ import ThemeSwitch from "./ThemeSwitch.astro";
 </header>
 
 <style>
+  header {
+    margin: 5rem 0;
+  }
   h1 {
     font-size: clamp(25px, 4vw, 30px);
     display: flex;
@@ -26,9 +38,32 @@ import ThemeSwitch from "./ThemeSwitch.astro";
     margin-bottom: clamp(20px, 4vw, 24px);
     letter-spacing: 0;
     color: red;
+    letter-spacing: -12px;
+    text-indent: -12px;
   }
 
   .header {
     color: var(--secondary);
+  }
+
+  header > div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+
+    & > a {
+      margin-left: 0.5rem;
+      &:hover {
+        svg {
+          g,
+          path {
+            fill: var(--primary);
+          }
+        }
+      }
+    }
   }
 </style>
