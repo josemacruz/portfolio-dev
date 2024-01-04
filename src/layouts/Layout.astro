@@ -2,6 +2,7 @@
 import Header from "../components/Header.astro";
 import "@fontsource/fira-mono";
 import "@fontsource-variable/inter";
+import { getLangFromUrl } from "../i18n/utils";
 
 interface Props {
   title: string;
@@ -12,7 +13,7 @@ const { title, description } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
@@ -47,7 +48,7 @@ const { title, description } = Astro.props;
 
   html[data-theme="dark"] {
     --background: #27374d;
-    --primary: #526d82;
+    --primary: #27455c;
     --secondary: #ffffff;
     --red: #ff0000;
     --black: #000000;
@@ -56,6 +57,7 @@ const { title, description } = Astro.props;
     --blue: #007fff;
     --chip-text: #7a0e27;
     --chip-background: #ee9f9f;
+    --text-color: #ffffff;
   }
 
   html[data-theme="light"] {
@@ -69,6 +71,7 @@ const { title, description } = Astro.props;
     --blue: #007fff;
     --chip-text: #7a0e27;
     --chip-background: #ffe9da;
+    --text-color: #000000;
   }
 
   body {

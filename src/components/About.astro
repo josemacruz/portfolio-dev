@@ -16,11 +16,6 @@
 </article>
 
 <style>
-  div {
-    display: flex;
-    align-content: center;
-    align-items: center;
-  }
   article {
     margin: 0 auto;
     max-width: 800px;
@@ -28,6 +23,18 @@
     color: var(--black);
     text-align: left;
     overflow: hidden;
+  }
+  div {
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 450px) {
+      flex-direction: column;
+      img {
+        margin-bottom: 1rem;
+      }
+    }
   }
   img {
     float: left;

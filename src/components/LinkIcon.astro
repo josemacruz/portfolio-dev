@@ -6,7 +6,13 @@ interface Props {
 const { url } = Astro.props;
 ---
 
-<a class="link" href={url} target="_blank" rel="noopener noreferrer">
+<a
+  class="link"
+  href={url}
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label=`link to ${url}`
+>
   <svg {...Astro.props} viewBox="0 0 24 24" transform="rotate(0)"
     ><g>
       <path

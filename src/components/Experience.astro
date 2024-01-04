@@ -2,68 +2,36 @@
 import Chip from "./Chip.astro";
 import KnowmadMood from "./icons/KnowmadMood.astro";
 import Secmotic from "./icons/Secmotic.astro";
+import { experience } from "../data/experience.ts";
 
 const { company } = Astro.props;
 
-const Companies = [
-  {
-    date: "Current",
-    title: "Knowmad mood",
-    description:
-      "I work as a front-end software engineer at Openbank, a leading digital bank in Europe. I develop and maintain web applications that offer a great user experience for the bank's customers.",
-    tags: [
-      "ReactJS",
-      "TypeScript",
-      "CSS3",
-      "Jest",
-      "HTML5",
-      "Accesibility",
-      "JavaScript",
-    ],
-    color: "linear-gradient(to left, #fac213 0%, #f77e21 50%, #d61c4e 100%)",
-  },
-  {
-    date: "March 2021 - March 2023",
-    title: "Secmotic S.L.",
-    description:
-      "I work as a front-end software engineer at Openbank, a leading digital bank in Europe. I develop and maintain web applications that offer a great user experience for the bank's customers.",
-    tags: [
-      "ReactJS",
-      "Docker",
-      "CSS3",
-      "Storybook",
-      "MongoDB",
-      "NodeJS",
-      "JavaScript",
-    ],
-    color: "#076CFF",
-  },
-];
+const data = experience[company];
 ---
 
 <article>
   <header>
-    <span>{Companies[company].date}</span>
+    <span>{data.date}</span>
     <div>
       {company === 0 ? <KnowmadMood /> : <Secmotic />}
-      <h2>{Companies[company].title}</h2>
+      <h2>{data.title}</h2>
     </div>
   </header>
   <main>
     <p>
-      {Companies[company].description}
+      {data.description}
     </p>
   </main>
   <footer>
-    {Companies[company].tags.map((item) => <Chip>{item}</Chip>)}
+    {data.tags.map((item) => <Chip>{item}</Chip>)}
   </footer>
 </article>
 
-<style define:vars={{ color: Companies[company].color }}>
+<style define:vars={{ color: data.color }}>
   article {
     margin: auto 1rem;
     padding-bottom: 2rem;
-    color: var(--black);
+    color: var(--text-color);
     font-family: "Inter Variable", sans-serif;
     display: flex;
     flex-direction: column;
@@ -73,6 +41,13 @@ const Companies = [
   header {
     text-align: left;
   }
+
+  header > div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 800;
+  }
   span {
     background: var(--color);
     -webkit-background-clip: text;
@@ -81,13 +56,6 @@ const Companies = [
     font-weight: 800;
     display: inline-block;
     margin-bottom: 1rem;
-  }
-
-  header > div {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-weight: 800;
   }
 
   main {

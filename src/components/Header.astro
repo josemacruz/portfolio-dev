@@ -5,10 +5,18 @@ import LinkedIn from "./icons/LinkedIn.astro";
 
 <header>
   <div>
-    <a href="https://github.com/josemacruz" target="_blank">
+    <a
+      href="https://github.com/josemacruz"
+      target="_blank"
+      aria-label="link to Github profile"
+    >
       <Github width="30" height="30" fill="var(--secondary)" />
     </a>
-    <a href="https://www.linkedin.com/in/josemacruz/" target="_blank">
+    <a
+      href="https://www.linkedin.com/in/josemacruz/"
+      target="_blank"
+      aria-label="link to Linkedin profile"
+    >
       <LinkedIn width="30" height="30" fill="var(--secondary)" />
     </a>
   </div>
@@ -22,27 +30,6 @@ import LinkedIn from "./icons/LinkedIn.astro";
 <style>
   header {
     margin: 5rem 0;
-  }
-  h1 {
-    font-size: clamp(25px, 4vw, 30px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    letter-spacing: 1px;
-    font-weight: 100;
-    font-family: "Fira Mono", sans-serif;
-  }
-
-  .dot {
-    font-size: 2.4em;
-    margin-bottom: clamp(20px, 4vw, 24px);
-    letter-spacing: 0;
-    color: red;
-    letter-spacing: -12px;
-    text-indent: -12px;
-  }
-
-  .header {
     color: var(--secondary);
   }
 
@@ -65,5 +52,23 @@ import LinkedIn from "./icons/LinkedIn.astro";
         }
       }
     }
+  }
+  h1 {
+    font-size: clamp(25px, 4vw, 30px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-family: "Fira Mono", sans-serif;
+  }
+
+  .dot {
+    font-size: 2.4em;
+    margin-bottom: clamp(20px, 4vw, 24px);
+    letter-spacing: 0;
+    color: red;
+    letter-spacing: -12px;
+    text-indent: -12px;
   }
 </style>

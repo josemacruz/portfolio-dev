@@ -3,14 +3,13 @@ import LinkIcon from "./LinkIcon.astro";
 interface Props {
   backgroundColor: string;
   className: string;
-  size: string;
   url?: string;
 }
 
-const { backgroundColor, className, size, url } = Astro.props;
+const { backgroundColor, className, url } = Astro.props;
 ---
 
-<section class={`card ${className} ${size}`}>
+<section class={`card ${className}`}>
   <header>{url && <LinkIcon width={40} url={url} />}</header>
   <main><slot /></main>
 </section>

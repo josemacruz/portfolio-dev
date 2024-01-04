@@ -1,7 +1,3 @@
----
-
----
-
 <label aria-label="Theme toggle" class="toggle-container">
   <input class="toggle-input" type="checkbox" id="theme-toggle" />
   <svg class="toggle" viewBox="0 0 292 142">
@@ -55,14 +51,6 @@
 </label>
 
 <style>
-  @function em($pixels) {
-    @if not(unit($pixels) == "px") {
-      @error 'Value #{$pixels} must have `px` unit.';
-    }
-
-    @return $pixels / 16px * 1em;
-  }
-
   .toggle-container {
     --inactive-color: #d3d3d6;
     position: relative;
