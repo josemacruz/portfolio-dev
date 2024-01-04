@@ -8,7 +8,6 @@ const { company } = Astro.props;
 const Companies = [
   {
     date: "Current",
-    logo: KnowmadMood,
     title: "Knowmad mood",
     description:
       "I work as a front-end software engineer at Openbank, a leading digital bank in Europe. I develop and maintain web applications that offer a great user experience for the bank's customers.",
@@ -25,7 +24,6 @@ const Companies = [
   },
   {
     date: "March 2021 - March 2023",
-    logo: Secmotic,
     title: "Secmotic S.L.",
     description:
       "I work as a front-end software engineer at Openbank, a leading digital bank in Europe. I develop and maintain web applications that offer a great user experience for the bank's customers.",
@@ -48,7 +46,7 @@ const Companies = [
   <header>
     <span>{Companies[company].date}</span>
     <div>
-      <Companies[company].logo />
+      {company === 0 ? <KnowmadMood /> : <Secmotic />}
       <h2>{Companies[company].title}</h2>
     </div>
   </header>
