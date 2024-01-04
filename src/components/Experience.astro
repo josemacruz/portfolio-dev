@@ -1,7 +1,7 @@
 ---
 import Chip from "./Chip.astro";
-import KnowmadMood from "./KnowmadMood.astro";
-import Secmotic from "./Secmotic.astro";
+import KnowmadMood from "./icons/KnowmadMood.astro";
+import Secmotic from "./icons/Secmotic.astro";
 
 const { company } = Astro.props;
 
@@ -31,7 +31,6 @@ const Companies = [
       "ReactJS",
       "Docker",
       "CSS3",
-      "SASS",
       "Storybook",
       "MongoDB",
       "NodeJS",
@@ -63,6 +62,7 @@ const Companies = [
 <style define:vars={{ color: Companies[company].color }}>
   article {
     margin: auto 1rem;
+    padding-bottom: 2rem;
     color: var(--black);
     font-family: "Inter Variable", sans-serif;
     display: flex;

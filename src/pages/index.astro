@@ -1,9 +1,9 @@
 ---
 import Card from "../components/Card.astro";
 import Grid from "../components/Grid.astro";
-import LinkedIn from "../components/LinkedIn.astro";
+import LinkedIn from "../components/icons/LinkedIn.astro";
 import Layout from "../layouts/Layout.astro";
-import Github from "../components/Github.astro";
+import Github from "../components/icons/Github.astro";
 import ThemeSwitch from "../components/ThemeSwitch.astro";
 import AboutMe from "../components/AboutMe.astro";
 import Experience from "../components/Experience.astro";
@@ -19,23 +19,27 @@ const colors = [
     color: "#0A66C2",
     size: "small",
     children: LinkedIn,
+    url: "https://www.linkedin.com/in/josemacruz/",
   },
   {
     color: "var(--primary)",
     size: "small",
     children: Experience,
     company: 0,
+    url: "https://www.knowmadmood.com/es",
   },
   {
     color: "var(--black)",
     size: "large",
     children: Github,
+    url: "https://github.com/josemacruz",
   },
   {
     color: "var(--primary)",
     size: "large",
     children: Experience,
     company: 1,
+    url: "https://secmotic.com/",
   },
   {
     color: "var(--green)",
@@ -62,6 +66,7 @@ const colors = [
             backgroundColor={item.color}
             size={item.size}
             className={`item${index}`}
+            url={item.url}
           >
             <item.children company={item.company} />
           </Card>

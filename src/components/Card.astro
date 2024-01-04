@@ -4,13 +4,14 @@ interface Props {
   backgroundColor: string;
   className: string;
   size: string;
+  url?: string;
 }
 
-const { backgroundColor, className, size } = Astro.props;
+const { backgroundColor, className, size, url } = Astro.props;
 ---
 
 <section class={`card ${className} ${size}`}>
-  <header><LinkIcon width={40} url="" /></header>
+  <header>{url && <LinkIcon width={40} url={url} />}</header>
   <main><slot /></main>
 </section>
 
