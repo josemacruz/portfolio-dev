@@ -13,23 +13,27 @@ export const cards = [
     color: "#0A66C2",
     children: LinkedIn,
     url: "https://www.linkedin.com/in/josemacruz/",
+    urlType: "primary",
   },
   {
     color: "var(--primary)",
     children: Experience,
     company: 0,
     url: "https://www.knowmadmood.com/es",
+    urlType: "secondary",
   },
   {
     color: "var(--black)",
     children: Github,
     url: "https://github.com/josemacruz",
+    urlType: "primary",
   },
   {
     color: "var(--primary)",
     children: Experience,
     company: 1,
     url: "https://secmotic.com/",
+    urlType: "secondary",
   },
   {
     color: "var(--primary)",

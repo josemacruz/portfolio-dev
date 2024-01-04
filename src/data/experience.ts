@@ -1,6 +1,6 @@
 export const experience = [
   {
-    date: "Current",
+    date: "March 2023 - Present",
     title: "Knowmad mood",
     description:
       "I work as a front-end software engineer at Openbank, a leading digital bank in Europe. I develop and maintain web applications that offer a great user experience for the bank's customers.",

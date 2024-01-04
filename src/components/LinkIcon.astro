@@ -1,13 +1,14 @@
 ---
 interface Props {
   url: string;
+  className: string;
   width?: number;
 }
-const { url } = Astro.props;
+const { url, className } = Astro.props;
 ---
 
 <a
-  class="link"
+  class=`link ${className}`
   href={url}
   target="_blank"
   rel="noopener noreferrer"
@@ -31,9 +32,22 @@ const { url } = Astro.props;
     justify-content: center;
     width: 2rem;
     height: 2rem;
-    color: var(--secondary);
+  }
+
+  .primary {
     background-color: var(--primary);
-    stroke: black;
+    stroke: var(--secondary);
+    border-radius: 50%;
+
+    &:hover {
+      stroke: white;
+      background-color: red;
+    }
+  }
+
+  .secondary {
+    background-color: var(--black);
+    stroke: white;
     border-radius: 50%;
 
     &:hover {
