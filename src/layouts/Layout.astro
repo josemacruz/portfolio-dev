@@ -14,9 +14,25 @@ const { title, description } = Astro.props;
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <!-- SEO -->
+    <meta name="author" content="Josema Cruz" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
-    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="keywords"
+      content="Web development, Software engineer, React.js, Astro framework, Next.js, HTML5, CSS3, JavaScript, Frontend development, UX, UI, Responsive design, SPAs, Component-based development, RESTful APIs, GraphQL, Redux, Recoil, Agile development, Git, Unit testing, CI/CD, TDD, Full-stack development, SEO, Asynchronous programming, SSR, PWAs"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="apple-mobile-web-app-title" content="Josema Cruz Portfolio" />
+    <meta property="
+      og:site_name" content="Josema Cruz Portfolio" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content="https://josemacruz.dev" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+
+    <!-- SEP -->
+    <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
