@@ -1,4 +1,4 @@
-<label aria-label="Theme toggle" class="toggle-container">
+<div class="toggle-container">
   <input class="toggle-input" type="checkbox" id="theme-toggle" />
   <svg class="toggle" viewBox="0 0 292 142">
     <path
@@ -48,14 +48,13 @@
         result="goo"></feColorMatrix>
     </filter>
   </svg>
-</label>
-
+</div>
 <style>
   .toggle-container {
     --inactive-color: #d3d3d6;
     position: relative;
-    aspect-ratio: 292 / 142;
-    height: 30px;
+    height: 100%;
+    width: 100%;
 
     &:nth-child(1) {
       --active-color: #35c759;

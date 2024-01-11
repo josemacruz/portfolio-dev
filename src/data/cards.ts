@@ -3,6 +3,7 @@ import Github from "../components/icons/Github.astro";
 import ThemeSwitch from "../components/ThemeSwitch.astro";
 import About from "../components/About.astro";
 import Experience from "../components/Experience.astro";
+import Blog from "../components/Blog.astro";
 
 export const cards = [
   {
@@ -39,4 +40,10 @@ export const cards = [
     color: "var(--primary)",
     children: ThemeSwitch,
   },
+  {
+    color: "var(--primary)",
+    children: Blog,
+    url: "https://ttcode.dev",
+    urlType: "secondary",
+  }
 ];
