@@ -1,0 +1,85 @@
+---
+import SpainFlag from "@/components/flags/Spain.astro";
+import ChevronIcon from "@/components/icons/Chevron.astro";
+
+const { currentLocale = "es", url } = Astro;
+
+const pathname = url.pathname;
+
+let restUrl;
+
+if (pathname.startsWith("/en")) {
+  const segments = pathname.split("/").slice(2);
+  restUrl = "/" + segments.join("/").replace(/\/+$/, "");
+} else {
+  restUrl = pathname.replace(/\/+$/, "");
+}
+
+const LOCALES: Record<
+  string,
+  { code: string; name: string; href: string; flag: typeof SpainFlag }
+> = {
+  en: {
+    code: "en",
+    href: `/en${restUrl}`,
+    name: "English",
+    flag: SpainFlag,
+  },
+  es: {
+    code: "es",
+    href: restUrl,
+    name: "Español",
+    flag: SpainFlag,
+  },
+};
+
+const currentLocaleData = LOCALES[currentLocale];
+const otherLocales = Object.values(LOCALES).filter(
+  (locale) => locale.code !== currentLocale
+);
+const currentPath = url.pathname.replace(currentLocaleData.href, "");
+---
+
+<div class="language-wrapper">
+  <select id="language">
+    <option value={currentLocaleData.name}>
+      <currentLocaleData.flag />
+      {currentLocaleData.name}
+    </option>
+    {
+      otherLocales.map((locale) => (
+        <option value={locale.name} data-url={`${locale.href}${currentPath}`}>
+          <locale.flag />
+          {locale.name}
+        </option>
+      ))
+    }
+  </select>
+</div>
+
+<style>
+  .language-wrapper {
+    margin-left: 0.5rem;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const select = document.getElementById("language") as HTMLSelectElement;
+
+    select.addEventListener("change", () => {
+      redirect();
+    });
+
+    function redirect() {
+      const selectedOption = select.options[
+        select.selectedIndex
+      ] as HTMLOptionElement;
+      const url = selectedOption.getAttribute("data-url");
+
+      if (url) {
+        window.location.href = url;
+      }
+    }
+  });
+</script>

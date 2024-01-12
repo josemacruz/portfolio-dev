@@ -1,0 +1,22 @@
+{
+  "SEO_TITLE": "Josema Cruz | Ingeniero de Telecomunicaciones y Desarrollador Front-en",
+  "SEO_DESCRIPTION": "Bienvenido al portfolio de Josema Cruz, un desarrollador front-end especializado en la creación de sitios web interactivos y aplicaciones web modernas. Explora mis proyectos recientes y conoce más sobre mis habilidades y experiencia.",
+  "SEO": {
+    "ARCHIVO_TITLE": "Archivo de las ediciones anteriores de Premios Esland 2024",
+    "ARCHIVO_DESCRIPTION": "Repasa los mejores momentos de ediciones anteriores",
+    "INFO_TITLE": "Información sobre los Premios Esland 2024",
+    "INFO_DESCRIPTION": "Descubre todo lo que necesitas saber sobre los Premios Esland 2024 y descarga el Kit de Prensa"
+  },
+  "EXPERIENCE": {
+    "KNOWMAD_MOOD": {
+      "DATE": "Marzo 2023 - Actualidad",
+      "TITLE": "Knowmad Mood",
+      "DESCRIPTION": "Trabajo como ingeniero de software front-end en Openbank, un banco digital líder en Europa. Desarrollo y mantengo aplicaciones web que ofrecen una excelente experiencia de usuario para los clientes del banco."
+    },
+    "SECMOTIC": {
+      "DATE": "Marzo 2021 - Marzo 2023",
+      "TITLE": "Secmotic S.L.",
+      "DESCRIPTION": "Experto en React.js, JavaScript y TypeScript, creando interfaces dinámicas. Competente en pruebas utilizando Jest y React Testing Library. Especializado en React-Redux, Bootstrap y MongoDB para el back-end de Node.js. Habilidades en Docker, GitLab CI/CD, Apache NiFi y gestión avanzada de Linux"
+    }
+  }
+}

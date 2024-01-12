@@ -1,5 +1,5 @@
 ---
-import Header from "../components/Header.astro";
+import Header from "@/components/Header.astro";
 import "@fontsource/fira-mono";
 import "@fontsource-variable/inter";
 
@@ -9,33 +9,31 @@ interface Props {
 }
 
 const { title, description } = Astro.props;
+const { currentLocale } = Astro;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={currentLocale}>
   <head>
-    <!-- SEO -->
+    <meta charset="UTF-8" />
     <meta name="author" content="Josema Cruz" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="keywords"
       content="Web development, Software engineer, React.js, Astro framework, Next.js, HTML5, CSS3, JavaScript, Frontend development, UX, UI, Responsive design, SPAs, Component-based development, RESTful APIs, GraphQL, Redux, Recoil, Agile development, Git, Unit testing, CI/CD, TDD, Full-stack development, SEO, Asynchronous programming, SSR, PWAs"
     />
     <meta property="og:type" content="website" />
-    <meta name="apple-mobile-web-app-title" content="Josema Cruz Portfolio" />
+    <meta name="apple-mobile-web-app-title" content="Portfolio Josema Cruz" />
     <meta property="
-      og:site_name" content="Josema Cruz Portfolio" />
+      og:site_name" content="Portfolio Josema Cruz" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content="https://josemacruz.dev" />
     <meta property="og:image" content="/meta_image.webp" />
-    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
-
-    <!-- SEO -->
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
   </head>
   <body>

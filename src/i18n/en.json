@@ -1,0 +1,22 @@
+{
+  "SEO_TITLE": "ESLAND Awards 2024 - Celebrating the Best of Streaming and Content Creators",
+  "SEO_DESCRIPTION": "Discover the best content creators from Spain, Latin America, and Andorra. Vote for your favorites! Celebrate innovation and talent from Twitch, YouTube, and more.",
+  "SEO": {
+    "ARCHIVO_TITLE": "Archive of Previous Editions of ESLAND Awards 2024",
+    "ARCHIVO_DESCRIPTION": "Review the best moments from previous editions.",
+    "INFO_TITLE": "Information about ESLAND Awards 2024",
+    "INFO_DESCRIPTION": "Discover everything you need to know about ESLAND Awards 2024 and download the Press Kit."
+  },
+  "EXPERIENCE": {
+    "KNOWMAD_MOOD": {
+      "DATE": "March 2023 - Present",
+      "TITLE": "Knowmad Mood",
+      "DESCRIPTION": "I work as a front-end software engineer at Openbank, a leading digital bank in Europe. I develop and maintain web applications that provide an excellent user experience for the bank's customers."
+    },
+    "SECMOTIC": {
+      "DATE": "March 2021 - March 2023",
+      "TITLE": "Secmotic S.L.",
+      "DESCRIPTION": "Expert in React.js, JavaScript, and TypeScript, creating dynamic interfaces. Proficient in testing using Jest and React Testing Library. Specialized in React-Redux, Bootstrap, and MongoDB for Node.js back-end. Skills in Docker, GitLab CI/CD, Apache NiFi, and advanced Linux management."
+    }
+  }
+}

@@ -1,36 +1,5 @@
 ---
-import Card from "../components/Card.astro";
-import Grid from "../components/Grid.astro";
-import Layout from "../layouts/Layout.astro";
-import { cards } from "../data/cards.ts";
+import App from "@/components/pages/App.astro";
 ---
 
-<Layout
-  title="Josema Cruz | Ingeniero de Telecomunicaciones y Desarrollador Front-end"
-  description="Bienvenido al portfolio de Josema Cruz, un desarrollador front-end especializado en la creación de sitios web interactivos y aplicaciones web modernas. Explora mis proyectos recientes y conoce más sobre mis habilidades y experiencia."
->
-  <main>
-    <Grid>
-      {
-        cards.map((item, index) => (
-          <Card
-            backgroundColor={item.color}
-            className={`item${index}`}
-            url={item.url}
-            urlType={item.urlType}
-          >
-            <item.children company={item.company} />
-          </Card>
-        ))
-      }
-    </Grid>
-  </main>
-</Layout>
-
-<style>
-  main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-bottom: 80px;
-  }
-</style>
+<App />
