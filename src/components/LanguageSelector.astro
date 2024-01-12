@@ -1,7 +1,4 @@
 ---
-import SpainFlag from "@/components/flags/Spain.astro";
-import ChevronIcon from "@/components/icons/Chevron.astro";
-
 const { currentLocale = "es", url } = Astro;
 
 const pathname = url.pathname;
@@ -15,21 +12,16 @@ if (pathname.startsWith("/en")) {
   restUrl = pathname.replace(/\/+$/, "");
 }
 
-const LOCALES: Record<
-  string,
-  { code: string; name: string; href: string; flag: typeof SpainFlag }
-> = {
+const LOCALES: Record<string, { code: string; name: string; href: string }> = {
   en: {
     code: "en",
     href: `/en${restUrl}`,
     name: "English",
-    flag: SpainFlag,
   },
   es: {
     code: "es",
     href: restUrl,
     name: "Español",
-    flag: SpainFlag,
   },
 };
 
@@ -43,13 +35,11 @@ const currentPath = url.pathname.replace(currentLocaleData.href, "");
 <div class="language-wrapper">
   <select id="language">
     <option value={currentLocaleData.name}>
-      <currentLocaleData.flag />
       {currentLocaleData.name}
     </option>
     {
       otherLocales.map((locale) => (
         <option value={locale.name} data-url={`${locale.href}${currentPath}`}>
-          <locale.flag />
           {locale.name}
         </option>
       ))

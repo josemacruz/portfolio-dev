@@ -1,18 +1,16 @@
+---
+import { getI18N } from "@/i18n";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+---
+
 <article>
   <div>
     <img src="/memoji.webp" alt="Josema Cruz" />
-    <p>
-      I'm <strong>Josema Cruz</strong>,a telecommunications engineer specialized
-      in telematics and passionate about web development.
-    </p>
+    <p set:html={i18n.ABOUT_ME_FIRST} />
   </div>
-  <p class="about-me-description">
-    As a software engineer at <strong>Knowmad mood</strong>, I work for <strong
-      >Openbank</strong
-    >, one of the most innovative digital banks. I like to create attractive,
-    functional and accessible user interfaces, using the latest technologies and
-    best practices.
-  </p>
+  <p class="about-me-description" set:html={i18n.ABOUT_ME_SECOND} />
 </article>
 
 <style>

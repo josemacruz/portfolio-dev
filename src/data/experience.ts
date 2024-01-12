@@ -1,9 +1,8 @@
-export const experience = [
-  {
-    date: "March 2023 - Present",
-    title: "Knowmad mood",
-    description:
-      "I work as a front-end software engineer at Openbank, a leading digital bank in Europe. I develop and maintain web applications that offer a great user experience for the bank's customers.",
+import KnowmadMood from "@/components/icons/KnowmadMood.astro";
+import Secmotic from "@/components/icons/Secmotic.astro";
+
+export const experience = {
+  KNOWMAD_MOOD: {
     tags: [
       "ReactJS",
       "TypeScript",
@@ -14,11 +13,9 @@ export const experience = [
       "JavaScript",
     ],
     color: "linear-gradient(to left, #fac213 0%, #f77e21 50%, #d61c4e 100%)",
+    logo: KnowmadMood,
   },
-  {
-    date: "March 2021 - March 2023",
-    title: "Secmotic S.L.",
-    description:"Versatile React.js, JavaScript, TypeScript expert crafting dynamic interfaces. Proficient in testing using Jest, React Testing Library. Specialized in React-Redux, Bootstrap, MongoDB for Node.js back-end. Skilled in Docker, GitLab CI/CD, Apache NiFi, and advanced Linux management.",
+  SECMOTIC: {
     tags: [
       "ReactJS",
       "Docker",
@@ -29,5 +26,6 @@ export const experience = [
       "JavaScript",
     ],
     color: "#076CFF",
+    logo: Secmotic
   },
-];
+};

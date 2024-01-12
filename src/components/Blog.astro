@@ -1,8 +1,13 @@
+---
+import { getI18N } from "@/i18n";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+---
+
 <div>
   <h1>TTCode.<span>dev</span></h1>
-  <span
-    >¡Mantente informado de todas las novedades del mundo de la programación!</span
-  >
+  <span set:html={i18n.BLOG_DESCRIPTION} />
 </div>
 
 <style>

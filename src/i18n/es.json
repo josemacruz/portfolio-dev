@@ -18,5 +18,8 @@
       "TITLE": "Secmotic S.L.",
       "DESCRIPTION": "Experto en React.js, JavaScript y TypeScript, creando interfaces dinámicas. Competente en pruebas utilizando Jest y React Testing Library. Especializado en React-Redux, Bootstrap y MongoDB para el back-end de Node.js. Habilidades en Docker, GitLab CI/CD, Apache NiFi y gestión avanzada de Linux"
     }
-  }
+  },
+  "BLOG_DESCRIPTION": "¡Mantente informado de todas las novedades del mundo de la programación!",
+  "ABOUT_ME_FIRST": "Soy <strong>Josema Cruz</strong>, un ingeniero de telecomunicaciones especializado en telemática y apasionado por el desarrollo web.",
+  "ABOUT_ME_SECOND": "Como ingeniero de software en <strong>Knowmad Mood</strong>, trabajo para <strong>Openbank</strong>, uno de los bancos digitales más innovadores. Me gusta crear interfaces de usuario atractivas, funcionales y accesibles, utilizando las últimas tecnologías y mejores prácticas."
 }

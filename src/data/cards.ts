@@ -19,7 +19,7 @@ export const cards = [
   {
     color: "var(--primary)",
     children: Experience,
-    company: 0,
+    company: 'KNOWMAD_MOOD',
     url: "https://www.knowmadmood.com/es",
     urlType: "secondary",
   },
@@ -32,7 +32,7 @@ export const cards = [
   {
     color: "var(--primary)",
     children: Experience,
-    company: 1,
+    company: 'SECMOTIC',
     url: "https://secmotic.com/",
     urlType: "secondary",
   },
