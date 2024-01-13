@@ -22,3 +22,4 @@ pnpm-debug.log*
 .vercel
 managed_context
 test_suite_analysis
+bun.lockb
