@@ -27,6 +27,12 @@ const i18n = getI18N({ currentLocale });
     align-content: center;
     align-items: center;
   }
+
+  img {
+    float: left;
+    max-width: 145px;
+    margin: auto 8px;
+  }
   @media screen and (max-width: 450px) {
     div {
       flex-direction: column;
@@ -34,11 +40,6 @@ const i18n = getI18N({ currentLocale });
     img {
       margin-bottom: 1.5rem;
     }
-  }
-  img {
-    float: left;
-    max-width: 145px;
-    margin: auto 8px;
   }
   p {
     font-size: 1rem;
