@@ -14,7 +14,11 @@ const { url, className } = Astro.props;
   rel="noopener noreferrer"
   aria-label=`link to ${url}`
 >
-  <svg {...Astro.props} viewBox="0 0 24 24" transform="rotate(0)"
+  <svg
+    {...Astro.props}
+    viewBox="0 0 24 24"
+    transform="rotate(0)"
+    aria-hidden="true"
     ><g>
       <path
         d="M7 17L17 7M17 7H8M17 7V16"
@@ -40,19 +44,19 @@ const { url, className } = Astro.props;
     border-radius: 50%;
 
     &:hover {
-      stroke: white;
-      background-color: red;
+      stroke: var(--primary);
+      background-color: var(--red);
     }
   }
 
   .secondary {
-    background-color: var(--black);
-    stroke: white;
+    background-color: var(--secondary);
+    stroke: var(--primary);
     border-radius: 50%;
 
     &:hover {
-      stroke: white;
-      background-color: red;
+      stroke: var(--primary);
+      background-color: var(--red);
     }
   }
 </style>

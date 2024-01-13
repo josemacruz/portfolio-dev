@@ -11,9 +11,9 @@ const { backgroundColor, className, url, urlType } = Astro.props;
 ---
 
 <section class={`card ${className}`}>
-  <header>
+  <div>
     {url && <LinkIcon width={40} url={url} className={urlType ?? ""} />}
-  </header>
+  </div>
   <main><slot /></main>
 </section>
 
@@ -25,7 +25,7 @@ const { backgroundColor, className, url, urlType } = Astro.props;
     position: relative;
   }
 
-  header {
+  div {
     position: absolute;
   }
 

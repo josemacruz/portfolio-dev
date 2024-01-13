@@ -1,19 +1,19 @@
 {
-  "SEO_TITLE": "Josema Cruz | Telecommunications Engineer and Front-end Developer",
-  "SEO_DESCRIPTION": "Welcome to the portfolio of Josema Cruz, a front-end developer specializing in creating interactive websites and modern web applications. Explore my recent projects and learn more about my skills and experience.",
+  "SEO_TITLE": "Josema Cruz | Telecommunications Engineer and Web Developer",
+  "SEO_DESCRIPTION": "Welcome to Josema Cruz's portfolio. Front-end developer specialized in creating interactive websites and modern web applications. Explore my recent projects and learn more about my skills and experience.",
   "EXPERIENCE": {
     "KNOWMAD_MOOD": {
       "DATE": "March 2023 - Present",
       "TITLE": "Knowmad Mood",
-      "DESCRIPTION": "I work as a front-end software engineer at Openbank, a leading digital bank in Europe. I develop and maintain web applications that provide an excellent user experience for the bank's customers."
+      "DESCRIPTION": "Frontend Developer at Openbank. Experience in analytics integration in ReactJS projects and addition of tests with Jest. Professional focus on interface design and quality code."
     },
     "SECMOTIC": {
       "DATE": "March 2021 - March 2023",
       "TITLE": "Secmotic S.L.",
-      "DESCRIPTION": "Expert in React.js, JavaScript, and TypeScript, creating dynamic interfaces. Proficient in testing using Jest and React Testing Library. Specialized in React-Redux, Bootstrap, and MongoDB for Node.js back-end. Skills in Docker, GitLab CI/CD, Apache NiFi, and advanced Linux management."
+      "DESCRIPTION": "Frontend Developer specializing in React.js. Implementation of tests with Jest and React Testing Library. Experience in React-Redux, Bootstrap. Node.js and MongoDB for the backend. Familiar with Fiware, Docker, GitLab CI/CD, and Apache NiFi."
     }
   },
-  "BLOG_DESCRIPTION": "Stay informed about all the latest news in the programming world!",
-  "ABOUT_ME_FIRST": "I'm <strong>Josema Cruz</strong>,a telecommunications engineer specialized in telematics and passionate about web development.",
-  "ABOUT_ME_SECOND": "  As a software engineer at <strong>Knowmad mood</strong>, I work for <strong>Openbank</strong>, one of the most innovative digital banks. I like to create attractive, functional and accessible user interfaces, using the latest technologies and best practices."
+  "BLOG_DESCRIPTION": "Stay informed about all the latest programming news!",
+  "ABOUT_ME_FIRST": "I am <strong>Josema Cruz</strong>, a Telecommunications Engineer specialized in Telematics, and passionate about web development.",
+  "ABOUT_ME_SECOND": "As a Software Engineer at <strong>Knowmad Mood</strong>, I work for <strong>Openbank</strong>, one of the most innovative digital banks. I enjoy creating attractive, functional, and accessible user interfaces, using the latest technologies and best practices."
 }

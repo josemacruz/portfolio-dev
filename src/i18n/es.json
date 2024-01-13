@@ -1,19 +1,19 @@
 {
-  "SEO_TITLE": "Josema Cruz | Ingeniero de Telecomunicaciones y Desarrollador Front-en",
-  "SEO_DESCRIPTION": "Bienvenido al portfolio de Josema Cruz, un desarrollador front-end especializado en la creación de sitios web interactivos y aplicaciones web modernas. Explora mis proyectos recientes y conoce más sobre mis habilidades y experiencia.",
+  "SEO_TITLE": "Josema Cruz | Ingeniero de Telecomunicaciones y Desarrollador Web",
+  "SEO_DESCRIPTION": "Bienvenido al portfolio de Josema Cruz. Desarrollador front-end especializado en la creación de sitios web interactivos y aplicaciones web modernas. Explora mis proyectos recientes y conoce más sobre mis habilidades y experiencia.",
   "EXPERIENCE": {
     "KNOWMAD_MOOD": {
       "DATE": "Marzo 2023 - Actualidad",
       "TITLE": "Knowmad Mood",
-      "DESCRIPTION": "Trabajo como ingeniero de software front-end en Openbank, un banco digital líder en Europa. Desarrollo y mantengo aplicaciones web que ofrecen una excelente experiencia de usuario para los clientes del banco."
+      "DESCRIPTION": "Desarrollador Frontend en Openbank. Experiencia en integración de analítica en proyectos ReactJS y adición de pruebas con Jest. Enfoque profesional en diseño de interfaces y código de calidad."
     },
     "SECMOTIC": {
       "DATE": "Marzo 2021 - Marzo 2023",
       "TITLE": "Secmotic S.L.",
-      "DESCRIPTION": "Experto en React.js, JavaScript y TypeScript, creando interfaces dinámicas. Competente en pruebas utilizando Jest y React Testing Library. Especializado en React-Redux, Bootstrap y MongoDB para el back-end de Node.js. Habilidades en Docker, GitLab CI/CD, Apache NiFi y gestión avanzada de Linux"
+      "DESCRIPTION": "Desarrollador Frontend especializado en React.js. Implementación de pruebas con Jest y React Testing Library. Experiencia en React-Redux, Bootstrap. Node.js y MongoDB para el back-end. Familiarizado con Fiware, Docker, GitLab CI/CD y Apache NiFi."
     }
   },
   "BLOG_DESCRIPTION": "¡Mantente informado de todas las novedades del mundo de la programación!",
-  "ABOUT_ME_FIRST": "Soy <strong>Josema Cruz</strong>, un ingeniero de telecomunicaciones especializado en telemática y apasionado por el desarrollo web.",
-  "ABOUT_ME_SECOND": "Como ingeniero de software en <strong>Knowmad Mood</strong>, trabajo para <strong>Openbank</strong>, uno de los bancos digitales más innovadores. Me gusta crear interfaces de usuario atractivas, funcionales y accesibles, utilizando las últimas tecnologías y mejores prácticas."
+  "ABOUT_ME_FIRST": "Soy <strong>Josema Cruz</strong>, Ingeniero de Telecomunicaciones especializado en Telemática y apasionado por el desarrollo web.",
+  "ABOUT_ME_SECOND": "Como Ingeniero de Software en <strong>Knowmad Mood</strong>, trabajo para <strong>Openbank</strong>, uno de los bancos digitales más innovadores. Me gusta crear interfaces de usuario atractivas, funcionales y accesibles, utilizando las últimas tecnologías y mejores prácticas."
 }
