@@ -1,9 +1,9 @@
-import LinkedIn from "../components/icons/LinkedIn.astro";
-import Github from "../components/icons/Github.astro";
-import About from "../components/About.astro";
-import Experience from "../components/Experience.astro";
-import Blog from "../components/Blog.astro";
-import Switch from "../components/Switch.astro";
+import LinkedIn from "@/components/icons/LinkedIn.astro";
+import Github from "@/components/icons/Github.astro";
+import About from "@/components/About.astro";
+import Experience from "@/components/Experience.astro";
+import Blog from "@/components/Blog.astro";
+import Switch from "@/components/Switch.astro";
 
 export const cards = [
   {
