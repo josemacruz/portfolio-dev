@@ -1,18 +1,19 @@
 ---
-import LinkIcon from "./LinkIcon.astro";
+import Link from "./Link.astro";
 interface Props {
+  id: string;
   backgroundColor: string;
   className: string;
   urlType?: string;
   url?: string;
 }
 
-const { backgroundColor, className, url, urlType } = Astro.props;
+const { id, backgroundColor, className, url, urlType } = Astro.props;
 ---
 
-<section class={`card ${className}`}>
+<section id={id} class={`card ${className}`}>
   <div>
-    {url && <LinkIcon width={40} url={url} className={urlType ?? ""} />}
+    {url && <Link width={40} url={url} className={urlType ?? ""} />}
   </div>
   <main><slot /></main>
 </section>
@@ -40,22 +41,22 @@ const { backgroundColor, className, url, urlType } = Astro.props;
     background-color: var(--color);
   }
 
-  .item0 {
+  .about {
     grid-column: span 2;
     grid-row: span 2;
   }
 
-  .item2 {
+  .experience_1 {
     grid-column: span 2;
     grid-row: span 2;
   }
 
-  .item4 {
+  .experience_2 {
     grid-column: span 2;
     grid-row: span 2;
   }
 
-  .item6 {
+  .blog {
     grid-column: span 2;
   }
 </style>

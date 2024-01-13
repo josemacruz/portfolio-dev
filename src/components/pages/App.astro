@@ -13,10 +13,11 @@ const i18n = getI18N({ currentLocale });
   <main>
     <Grid>
       {
-        cards.map((item, index) => (
+        cards.map((item) => (
           <Card
+            id={item.id}
             backgroundColor={item.color}
-            className={`item${index}`}
+            className={item.id}
             url={item.url}
             urlType={item.urlType}
           >

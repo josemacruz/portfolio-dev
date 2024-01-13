@@ -8,7 +8,7 @@ const { url, className } = Astro.props;
 ---
 
 <a
-  class=`link ${className}`
+  class={className}
   href={url}
   target="_blank"
   rel="noopener noreferrer"
@@ -30,7 +30,7 @@ const { url, className } = Astro.props;
 </a>
 
 <style>
-  .link {
+  a {
     display: flex;
     align-items: center;
     justify-content: center;

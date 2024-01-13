@@ -1,5 +1,5 @@
 ---
-import Header from "@/components/Header.astro";
+import Title from "@/components/Title.astro";
 import "@fontsource/fira-mono";
 import "@fontsource-variable/inter";
 
@@ -37,7 +37,7 @@ const { currentLocale } = Astro;
     <title>{title}</title>
   </head>
   <body>
-    <Header />
+    <Title />
     <slot />
     <style is:global>
       :root {
