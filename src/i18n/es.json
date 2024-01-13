@@ -5,12 +5,12 @@
     "KNOWMAD_MOOD": {
       "DATE": "Marzo 2023 - Actualidad",
       "TITLE": "Knowmad Mood",
-      "DESCRIPTION": "Desarrollador Frontend en Openbank. Experiencia en integración de analítica en proyectos ReactJS y adición de pruebas con Jest. Enfoque profesional en diseño de interfaces y código de calidad."
+      "DESCRIPTION": "Desarrollador Frontend en Openbank. Con experiencia en la integración de analítica en proyectos ReactJS y la implementación de pruebas con Jest. Comprometido con priorizar la accesibilidad en el diseño. Uso de otras tecnologías como Storybook y Cypress."
     },
     "SECMOTIC": {
       "DATE": "Marzo 2021 - Marzo 2023",
       "TITLE": "Secmotic S.L.",
-      "DESCRIPTION": "Desarrollador Frontend especializado en React.js. Implementación de pruebas con Jest y React Testing Library. Experiencia en React-Redux, Bootstrap. Node.js y MongoDB para el back-end. Familiarizado con Fiware, Docker, GitLab CI/CD y Apache NiFi."
+      "DESCRIPTION": "Desarrollador Frontend especializado en React.js. Implementación de pruebas con Jest y React Testing Library. Experiencia en React-Redux, Bootstrap. Node.js y MongoDB para el backend. Familiarizado con Fiware, Docker, GitLab CI/CD y Apache NiFi."
     }
   },
   "BLOG_DESCRIPTION": "¡Mantente informado de todas las novedades del mundo de la programación!",
