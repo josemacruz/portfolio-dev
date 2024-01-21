@@ -58,4 +58,18 @@ import Toggle from "@/components/icons/Toggle.astro";
     document.documentElement.setAttribute("data-theme", targetTheme);
     localStorage.setItem("theme", targetTheme);
   };
+
+  toggle.onkeydown = function (event) {
+    if (event.isComposing || event.keyCode === 229 || event.keyCode === 13) {
+      const currentTheme = document.documentElement.getAttribute("data-theme");
+      let targetTheme = "light";
+
+      if (currentTheme === "light") {
+        targetTheme = "dark";
+      }
+
+      document.documentElement.setAttribute("data-theme", targetTheme);
+      localStorage.setItem("theme", targetTheme);
+    }
+  };
 </script>
