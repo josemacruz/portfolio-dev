@@ -51,7 +51,7 @@ export const cards = [
     color: "var(--primary)",
     children: Projects,
     project: 'OKOASHOP',
-    url: "https://okoa.com/",
+    url: "https://okoashop.com/",
     urlType: "secondary",
   }
 ];
