@@ -45,12 +45,5 @@ export const cards = [
     id: 'switch',
     color: "var(--primary)",
     children: Switch,
-  },
-  {
-    id: 'blog',
-    color: "var(--primary)",
-    children: Blog,
-    url: "https://ttcode.dev",
-    urlType: "secondary",
   }
 ];
