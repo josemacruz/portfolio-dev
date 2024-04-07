@@ -3,9 +3,7 @@ import { projects } from "@/data/projects";
 import Chip from "./Chip.astro";
 
 const { project } = Astro.props;
-console.log({ project });
 const currentProject = projects[project as keyof typeof projects];
-console.log(currentProject);
 ---
 
 <article class="card">
