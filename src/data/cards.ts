@@ -45,13 +45,5 @@ export const cards = [
     id: 'switch',
     color: "var(--primary)",
     children: Switch,
-  },
-  {
-    id: 'project_1',
-    color: "var(--primary)",
-    children: Projects,
-    project: 'OKOASHOP',
-    url: "https://okoashop.com/",
-    urlType: "secondary",
   }
 ];
