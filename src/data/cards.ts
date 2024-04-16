@@ -1,4 +1,4 @@
-import LinkedIn from "@/components/icons/LinkedIn.astro";
+iimport LinkedIn from "@/components/icons/LinkedIn.astro";
 import Github from "@/components/icons/Github.astro";
 import About from "@/components/About.astro";
 import Experience from "@/components/Experience.astro";
@@ -45,5 +45,5 @@ export const cards = [
     id: 'switch',
     color: "var(--primary)",
     children: Switch,
-  }
+  },
 ];
