@@ -3,7 +3,6 @@ import Github from "@/components/icons/Github.astro";
 import About from "@/components/About.astro";
 import Experience from "@/components/Experience.astro";
 import Switch from "@/components/Switch.astro";
-import Projects from "@/components/Projects.astro";
 
 export const cards = [
   {
