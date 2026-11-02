@@ -48,13 +48,26 @@ export const jobs: Job[] = [
   },
 ];
 
-export const sideProjectTech = ['Next.js', 'NestJS', 'React Native', 'Claude Code', 'Codex', 'OpenCode'];
+export const sideProjectTech = [
+  'Next.js',
+  'React',
+  'TypeScript',
+  'NestJS',
+  'React Native',
+  'Supabase',
+  'PostgreSQL',
+  'Stripe',
+  'Clerk',
+  'Docker',
+  'Linux',
+  'Nginx',
+];
 
 export const education = {
-  /** Mes de inicio del máster; `null` muestra solo «en curso». */
+  /** Mes de inicio del máster; `null` muestra el estado indicado en el diccionario. */
   masterStart: null as YearMonth | null,
   bachelorYears: '2015 — 2022',
-  thesisTitle: 'Sistema de gestión de alertas automáticas basado en FIWARE',
   /** Enlace al TFG; `null` lo muestra como texto. */
   thesisUrl: null as string | null,
 };
+

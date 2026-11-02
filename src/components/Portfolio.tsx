@@ -125,11 +125,11 @@ export function Portfolio({ locale }: { locale: Locale }) {
               <p className="muted-15">
                 {dict.education.thesis}:{' '}
                 {education.thesisUrl ? (
-                  <a className="lnk strong" href={education.thesisUrl} lang="es">
-                    {education.thesisTitle}
+                  <a className="lnk strong" href={education.thesisUrl} lang={locale}>
+                    {dict.education.thesisTitle}
                   </a>
                 ) : (
-                  <span lang="es">{education.thesisTitle}</span>
+                  <span lang={locale}>{dict.education.thesisTitle}</span>
                 )}
               </p>
             </Entry>
